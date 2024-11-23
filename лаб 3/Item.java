@@ -1,3 +1,5 @@
+package com.gildedrose;
+
 public class Item {
     private String name;
     private int sellIn;
@@ -45,8 +47,8 @@ public class Item {
         this.quality = quality;
     }
 
-   @Override
-   public String toString() {
-        return this.name + ", " + this.sellIn + ", " + this.quality;
+    @Override
+    public String toString() {
+        return String.format("%s, %d, %d", name, sellIn, quality);
     }
 }
